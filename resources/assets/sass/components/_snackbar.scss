@@ -24,30 +24,59 @@
     margin-left: 24px;
     margin-bottom: 0;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     will-change: transform, margin;
     transform: translateY(100%);
+    overflow: hidden;
 
 
-    @media (max-width: $layout-screen-size-threshold) {
+    @media (max-width: $screen-phone-breakpoint) {
       margin-left: 0;
       margin-bottom: 0;
+      border-radius: 0;
     }
-    @media (max-width: $screen-tablet-breakpoint - 1px) {
+    @media (max-width: $screen-phone-breakpoint - 1px) {
       width: 100%;
       max-width: none;
     }
 
   }
 
+  &__text{
+    opacity: 0;
+    will-change: opacity;
+    @include material-animation-default(0.3s);
+    transition-property: opacity;
+    transition-delay: .1s;
+    .md-snackbar--open &{
+      opacity: 1;
+    }
+  }
+
   &__button{
     margin-left: 24px;
+    opacity: 0;
+    will-change: opacity;
+    @include material-animation-default(0.3s);
+    transition-delay: .1s;
+    transition-property: opacity;
+    .md-snackbar--open &{
+      opacity: 1;
+    }
   }
 
   &--multiline{
     .md-snackbar__surface{
       height: 80px;
+    }
+  }
+
+  &--center{
+    .md-snackbar__surface{
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 

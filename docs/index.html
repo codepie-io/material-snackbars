@@ -7,8 +7,7 @@
     <title>Title</title>
     <link href="../src/css/snackbar.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!--<script src="../src/js/snackbar.js"></script>-->
-    <script src="t.js"></script>
+    <script src="../src/js/snackbar.js"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -24,7 +23,7 @@
         }
         .middle{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100%;
@@ -33,15 +32,29 @@
 </head>
 <body>
     <div class="middle">
+        <div class="">
+            <input type="text" name="message" placeholder="Message" class="message">
+        </div>
+        <div class="">
+            <input type="text" name="buttonText" placeholder="Button Text" class="buttonText">
+        </div>
         <button class="md-button md-button--raised md-button--accent show-snackbar">show snackbar</button>
+        <input type="checkbox" class="hasButton" id="hasButton">
+        <label for="hasButton">Show button</label>
     </div>
 <script>
-    $(function(){
-        snackBar();
-    });
-
     $('.show-snackbar').click(function(){
-        snackBar();
+        var msg = $('.message').val();
+        var hasButton = $('.hasButton').is(':checked');
+        var buttonText = $('.buttonText').val();
+        snackBar({
+            messageText: msg,
+            buttonText: buttonText,
+            hasButton: hasButton,
+            autoClose: false,
+            alignCenter: true,
+            multiLine: true
+        });
     });
 </script>
 </body>
