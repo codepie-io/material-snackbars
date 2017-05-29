@@ -1,0 +1,4 @@
+/node_modules
+.idea/
+mix-manifest.json
+mix.js

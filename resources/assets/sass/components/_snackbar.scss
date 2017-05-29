@@ -1,0 +1,72 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+// ==========  Snackbar  ========== //
+
+.md-snackbar{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: auto;
+
+  &__surface{
+    background-color: #323232;
+    height: 48px;
+    @include typo-body-1();
+    max-width: 568px;
+    min-width: 288px;
+    border-radius: 2px;
+    padding:14px 24px;
+    color: #fff;
+    margin-left: 24px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    will-change: transform, margin;
+    transform: translateY(100%);
+
+
+    @media (max-width: $layout-screen-size-threshold) {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    @media (max-width: $screen-tablet-breakpoint - 1px) {
+      width: 100%;
+      max-width: none;
+    }
+
+  }
+
+  &__button{
+    margin-left: 24px;
+  }
+
+  &--multiline{
+    .md-snackbar__surface{
+      height: 80px;
+    }
+  }
+
+  &--open{
+    .md-snackbar__surface{
+      margin-bottom: 24px;
+      transform: none;
+
+      @media (max-width: $layout-screen-size-threshold) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--animating{
+    .md-snackbar__surface{
+      @include material-animation-default(.3s);
+      transition-property: transform, margin;
+    }
+  }
+
+}

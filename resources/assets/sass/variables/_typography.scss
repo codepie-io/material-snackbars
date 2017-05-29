@@ -1,0 +1,6 @@
+@import "color-theme";
+
+// ==========  Typography  ========== //
+$preferred_font: 'Roboto', sans-serif !default;
+$site_font: 'Lato', sans-serif !default;
+$body-color: unquote("rgba(#{$color-black}, .84)") !default;

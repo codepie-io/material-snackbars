@@ -1,0 +1,8 @@
+@import "color-theme";
+
+// ==========  Snackbar  ========== //
+
+// Hard coded since the color is not present in any palette.
+$snackbar-background-color: #323232 !default;
+//$snackbar-tablet-breakpoint: $screen-tablet-breakpoint;// //TODO
+$snackbar-action-color: unquote("rgb(#{$color-accent})") !default;

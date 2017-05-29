@@ -1,0 +1,28 @@
+@import "color-theme";
+
+// ==========  Tabs  ========== //
+
+$layout-drawer-narrow: 280px !default;
+$layout-drawer-wide: 320px !default;
+$layout-drawer-width: $layout-drawer-wide !default;
+$layout-drawer-profile-bg-color: unquote("rgb(#{$color-primary})") !default;
+
+$header-icon-size: 32px !default;
+$header-logo-size: 32px !default;
+$layout-screen-size-threshold: 959px !default;
+$header-icon-margin: 24px !default;
+$layout-drawer-button-mobile-size: 32px !default;
+$layout-drawer-button-desktop-size: 48px !default;
+
+$header-desktop-baseline: 80px !default;
+$header-mobile-baseline: 72px !default;
+$header-mobile-indent: 16px !default;
+$header-desktop-indent: 24px !default;
+
+$layout-tab-font-size: 14px !default;
+$layout-tab-bar-height: 48px !default;
+$layout-tab-mobile-padding: 12px !default;
+$layout-tab-desktop-padding: 24px !default;
+$layout-tab-highlight-thickness: 2px !default;
+
+

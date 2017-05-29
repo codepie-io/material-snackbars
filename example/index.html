@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="../src/css/snackbar.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--<script src="../src/js/snackbar.js"></script>-->
+    <script src="t.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+        body{
+            height: 100vh;
+        }
+        .middle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="middle">
+        <button class="md-button md-button--raised md-button--accent show-snackbar">show snackbar</button>
+    </div>
+<script>
+    $(function(){
+        snackBar();
+    });
+
+    $('.show-snackbar').click(function(){
+        snackBar();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+// ==========  Grid  ========== //
+
+$screen-phone-breakpoint: 600px !default;
+$screen-tablet-breakpoint: 960px !default;
+$screen-desktop-breakpoint: 1280px !default;
+$screen-large-desktop-breakpoint: 1440px !default;
+//$screen-large-desktop-breakpoint: 1920px !default;
+
+$grid-tablet-breakpoint : 600px !default;
+$grid-desktop-breakpoint : 960px !default;
+$grid-large-desktop-breakpoint : $screen-desktop-breakpoint !default;
+
+$grid-columns: 12 !default;
+
+$grid-desktop-columns: 12 !default;
+$grid-desktop-gutter: 24px !default;
+$grid-desktop-margin: 16px !default;
+$grid-gutter: 16px !default;
+$grid-margin: $grid-gutter;
+$grid-has-tile-margin: 8px !default;
+
+$grid-tablet-columns: 8 !default;
+$grid-tablet-gutter: 16px !default;
+$grid-tablet-margin: 16px !default;
+
+$grid-phone-columns: 4 !default;
+$grid-phone-gutter: 16px !default;
+$grid-phone-margin: 16px !default;
+
+$grid-cell-default-columns: $grid-phone-columns !default;
+$grid-max-columns: $grid-desktop-columns !default;
+
+//Grid List
+
+$grid-list-phone-margin: 4px;
+$grid-list-phone-gutter: 4px;
+
+$grid-list-margin: 4px;
+$grid-list-gutter: 4px;
+$grid-list-gutter-narrow: 1px;
