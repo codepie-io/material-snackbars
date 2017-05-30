@@ -5,7 +5,7 @@ They automatically disappear after a timeout or after user interaction elsewhere
 
 
 ## Demo
-* [snackbar.js 1.0](https://codeartisan-ui.github.io/snackbar/) - 
+ <a href="https://codeartisan-ui.github.io/snackbar/" target="_blank">snackbar.js 1.0</a>
 
 
 ## Where is it being tested?
