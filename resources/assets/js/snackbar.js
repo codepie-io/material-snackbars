@@ -22,7 +22,7 @@
         var surface =  document.createElement('div');
         surface.className = this.CssClasses_.SURFACE;
         surface.appendChild(surfaceText);
-        if(this.options.hasButton){
+        if(this.options.showButton){
             var button =  document.createElement('button');
             button.className = 'md-button md-button--accent md-snackbar__button';
             button.innerText = this.options.buttonText;
@@ -61,10 +61,11 @@
     SnackBar.prototype.defaults = {
         messageText: '',
         buttonText: 'UNDO',
-        hasButton: false,
+        showButton: false,
         autoClose: true,
         multiLine: false,
-        alignCenter: false
+        alignCenter: false,
+        closeTimeOut: 3000
     };
 
     SnackBar.prototype.CssClasses_ = {
@@ -91,7 +92,7 @@
             this.hideTimeOut = window.setTimeout(
                 function() {
                     this.hideSnackBar_();
-                }.bind(this), this.Constant_.CLOSE_TIMEOUT
+                }.bind(this), this.options.closeTimeOut
             );
         }
     };

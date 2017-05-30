@@ -3,59 +3,147 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Snackbars | Material Design | CodeArtisan</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Snackbars | Material Design | CodeArtisan">
+    <meta name="theme-color" content="#4caf50">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Artisan Deals">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#43a047">
+
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileColor" content="#4caf50">
+    <meta name="msapplication-navbutton-color" content="#43a047">
+
+    <!-- link icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet' type='text/css'>
+
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/code.css" rel="stylesheet">
     <link href="../src/css/snackbar.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../src/js/snackbar.js"></script>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        html,body{
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            min-height: 100%;
-        }
-        body{
-            height: 100vh;
-        }
-        .middle{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-    </style>
 </head>
-<body>
-    <div class="middle">
-        <div class="">
-            <input type="text" name="message" placeholder="Message" class="message">
-        </div>
-        <div class="">
-            <input type="text" name="buttonText" placeholder="Button Text" class="buttonText">
-        </div>
-        <button class="md-button md-button--raised md-button--accent show-snackbar">show snackbar</button>
-        <input type="checkbox" class="hasButton" id="hasButton">
-        <label for="hasButton">Show button</label>
+<body class="has-fixed-header">
+<header class="md-header md-header--primary is-fixed is-casting-shadow">
+    <div class="md-header__row">
+        <div class="md-header__title"> Snackbars </div>
+        <div class="md-layout-spacer"></div>
     </div>
-<script>
-    $('.show-snackbar').click(function(){
-        var msg = $('.message').val();
-        var hasButton = $('.hasButton').is(':checked');
-        var buttonText = $('.buttonText').val();
-        snackBar({
-            messageText: msg,
-            buttonText: buttonText,
-            hasButton: hasButton,
-            autoClose: false,
-            alignCenter: true,
-            multiLine: true
-        });
-    });
-</script>
+</header>
+
+<section class="" id="app">
+    <div class="md-container md-container--box-narrow layout-m-b-3">
+        <h2 class="md-typography--headline md-text-primary">
+            Snackbars
+        </h2>
+        <div class="md-row">
+            <div class="md-col md-col--8 md-col--sm-12 md-col--xs-12">
+                <div class="content__text--sub-text md-typography--font-regular">
+                    Snackbars provide lightweight feedback about an operation.
+                    They show a brief message at the bottom of the screen on mobile and lower left on larger devices.
+                </div>
+            </div>
+        </div>
+        <div class="md-row">
+            <div class="md-col md-col--7">
+                <pre class="prettyprint"><span
+                        class="pln"><br>&nbsp; </span><span class="kwd">var</span><span class="pln"> config </span><span
+                        class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; message</span><span
+                        class="pun">:</span><span class="pln"> </span><span class="str">"</span><span class="str">Hello World</span><span
+                        class="str">"</span><span class="pun">,</span><span
+                        class="pln"><br>&nbsp; &nbsp; buttonText</span><span class="pun">:</span><span
+                        class="pln"> </span><span class="str">"</span><span class="str">UNDO"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; showButton</span><span
+                        class="pun">:</span><span class="pln"> </span><var><span class="str">true</span></var><span class="pun">,</span><span
+                        class="pln"><br>&nbsp; &nbsp; alignCenter</span><span class="pun">:</span><span
+                        class="pln"> </span><span class="str">"</span><var><span class="str">true</span></var><span class="pln"><br>&nbsp; </span><span
+                        class="pun">};</span><span class="pln"><br>&nbsp; snackBar</span><span class="pun">(</span><span class="pln">config</span><span
+                        class="pun">);</span>
+                </pre>
+            </div>
+            <div class="md-col md-col--5 md-col--sm-12 md-col--xs-12 md-align md-align--center-center">
+                <div class="">
+                    <div class="md-textfield md-textfield-box-narrow-layout md-textfield--full-width" data-toggle="textfield">
+                        <input class="md-textfield__input message" id="message" maxlength="100" value="Hello World">
+                        <label class="md-textfield__label" for="message">Message</label>
+                    </div>
+                    <div class="md-textfield md-textfield-box-narrow-layout md-textfield--full-width" data-toggle="textfield">
+                        <input class="md-textfield__input" id="btnText" type="text" value="UNDO">
+                        <label class="md-textfield__label" for="btnText">Button Text</label>
+                    </div>
+                    <div class="md-typography--subhead layout-m-t-1">
+                        Show button?
+                    </div>
+                    <div class="md-layout md-layout--row">
+                        <label class="md-radio md-js-ripple-effect" data-toggle="radio" for="yesShowBtn">
+                            <input type="radio" name="showBtn" id="yesShowBtn" class="md-radio__button" checked>
+                            <span class="md-radio__label">Yes</span>
+                        </label>
+                        <label class="md-radio md-js-ripple-effect layout-m-l-2" data-toggle="radio" for="noShowBtn">
+                            <input type="radio" name="showBtn" id="noShowBtn" class="md-radio__button">
+                            <span class="md-radio__label">No</span>
+                        </label>
+                    </div>
+                    <div class="md-typography--subhead layout-m-t-1">
+                        Align center on desktop?
+                    </div>
+                    <div class="md-layout md-layout--row">
+                        <label class="md-radio md-js-ripple-effect" data-toggle="radio" for="yesAlignCenter">
+                            <input type="radio" name="alignCenter" id="yesAlignCenter" class="md-radio__button" checked>
+                            <span class="md-radio__label">Yes</span>
+                        </label>
+                        <label class="md-radio md-js-ripple-effect layout-m-l-2" data-toggle="radio" for="noAlignCenter">
+                            <input type="radio" name="alignCenter" id="noAlignCenter" class="md-radio__button">
+                            <span class="md-radio__label">No</span>
+                        </label>
+                    </div>
+
+                    <button type="button" class="md-button md-button--primary md-button--raised layout-m-t-1 show-snackbar">Show Snackbar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="md-container md-container--box-narrow">
+        <div class="md-row text-center  make-center-image">
+
+            <div class="md-col md-col--3">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="md-container md-container--box-narrow">
+        <div class="md-row text-center  make-center-image">
+        </div>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/textfield.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="../src/js/snackbar.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

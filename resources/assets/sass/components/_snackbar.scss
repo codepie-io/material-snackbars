@@ -49,7 +49,6 @@
     will-change: opacity;
     @include material-animation-default(0.3s);
     transition-property: opacity;
-    transition-delay: .1s;
     .md-snackbar--open &{
       opacity: 1;
     }
@@ -57,10 +56,10 @@
 
   &__button{
     margin-left: 24px;
+    margin-right: -16px;
     opacity: 0;
     will-change: opacity;
     @include material-animation-default(0.3s);
-    transition-delay: .1s;
     transition-property: opacity;
     .md-snackbar--open &{
       opacity: 1;

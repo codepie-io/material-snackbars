@@ -1,0 +1,505 @@
+.devsite-crx-install {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.devsite-crx-install .material-icons {
+    margin-right: 4px
+}
+
+.devsite-background:not(.devsite-background-grey):not(.devsite-landing-row-cards) .button-white {
+    color: #fff
+}
+
+.devsite-background.devsite-background-theme:not(.devsite-landing-row-cards) .button-white {
+    color: #fff
+}
+
+.devsite-background.devsite-background-cyan:not(.devsite-landing-row-cards) .button-white,.devsite-background.devsite-background-google-yellow:not(.devsite-landing-row-cards) .button-white,.devsite-background.devsite-background-light-green:not(.devsite-landing-row-cards) .button-white,.devsite-background.devsite-background-orange:not(.devsite-landing-row-cards) .button-white {
+    color: #212121
+}
+
+.devsite-background:not(.devsite-background-grey):not(.devsite-landing-row-cards) .button-white:hover {
+    background: rgba(153,153,153,.3)
+}
+
+.devsite-background:not(.devsite-background-grey):not(.devsite-landing-row-cards) .button-white:focus {
+    background: rgba(153,153,153,.5)
+}
+
+.devsite-background .button-primary {
+    background: #fff;
+    color: #039be5
+}
+
+.devsite-background .button-primary:active,.devsite-background .button-primary:focus {
+    background: #e1f3fc
+}
+
+.devsite-background .button-primary:hover {
+    background: #c3e7f9
+}
+
+.devsite-foreground-theme .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-theme .button:not(.button-disabled) {
+    color: #039be5
+}
+
+.devsite-foreground-theme .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-theme .button.button-primary:not(.button-disabled) {
+    background: #039be5
+}
+
+.devsite-foreground-theme .button.button-primary:not(.button-disabled):active,.devsite-foreground-theme .button.button-primary:not(.button-disabled):hover,.devsite-foreground-theme .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-theme .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-theme .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-theme .button.button-primary:not(.button-disabled):focus {
+    background: #0277bd
+}
+
+.devsite-foreground-blue-grey .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-blue-grey .button:not(.button-disabled) {
+    color: #607d8b
+}
+
+.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled) {
+    background: #607d8b
+}
+
+.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):active,.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):hover,.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-blue-grey .button.button-primary:not(.button-disabled):focus {
+    background: #455a64
+}
+
+.devsite-foreground-blue-grey-dark .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-blue-grey-dark .button:not(.button-disabled) {
+    color: #455a64
+}
+
+.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled) {
+    background: #455a64
+}
+
+.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):active,.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):hover,.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-blue-grey-dark .button.button-primary:not(.button-disabled):focus {
+    background: #37474f
+}
+
+.devsite-foreground-cyan .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-cyan .button:not(.button-disabled) {
+    color: #00bcd4
+}
+
+.devsite-foreground-cyan .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-cyan .button.button-primary:not(.button-disabled) {
+    background: #00bcd4
+}
+
+.devsite-foreground-cyan .button.button-primary:not(.button-disabled):active,.devsite-foreground-cyan .button.button-primary:not(.button-disabled):hover,.devsite-foreground-cyan .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-cyan .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-cyan .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-cyan .button.button-primary:not(.button-disabled):focus {
+    background: #0097a7
+}
+
+.devsite-foreground-deep-orange .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-deep-orange .button:not(.button-disabled) {
+    color: #ff5722
+}
+
+.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled) {
+    background: #ff5722
+}
+
+.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):active,.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):hover,.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-deep-orange .button.button-primary:not(.button-disabled):focus {
+    background: #e64a19
+}
+
+.devsite-foreground-deep-purple .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-deep-purple .button:not(.button-disabled) {
+    color: #673ab7
+}
+
+.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled) {
+    background: #673ab7
+}
+
+.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):active,.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):hover,.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-deep-purple .button.button-primary:not(.button-disabled):focus {
+    background: #512da8
+}
+
+.devsite-foreground-google-blue .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-blue .button:not(.button-disabled) {
+    color: #4285f4
+}
+
+.devsite-foreground-google-blue .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-blue .button.button-primary:not(.button-disabled) {
+    background: #4285f4
+}
+
+.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):active,.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):hover,.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-google-blue .button.button-primary:not(.button-disabled):focus {
+    background: #3367d6
+}
+
+.devsite-foreground-google-green .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-green .button:not(.button-disabled) {
+    color: #00c853
+}
+
+.devsite-foreground-google-green .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-green .button.button-primary:not(.button-disabled) {
+    background: #00c853
+}
+
+.devsite-foreground-google-green .button.button-primary:not(.button-disabled):active,.devsite-foreground-google-green .button.button-primary:not(.button-disabled):hover,.devsite-foreground-google-green .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-google-green .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-google-green .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-google-green .button.button-primary:not(.button-disabled):focus {
+    background: #008c3a
+}
+
+.devsite-foreground-google-red .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-red .button:not(.button-disabled) {
+    color: #db4437
+}
+
+.devsite-foreground-google-red .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-red .button.button-primary:not(.button-disabled) {
+    background: #db4437
+}
+
+.devsite-foreground-google-red .button.button-primary:not(.button-disabled):active,.devsite-foreground-google-red .button.button-primary:not(.button-disabled):hover,.devsite-foreground-google-red .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-google-red .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-google-red .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-google-red .button.button-primary:not(.button-disabled):focus {
+    background: #c53929
+}
+
+.devsite-foreground-google-yellow .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-yellow .button:not(.button-disabled) {
+    color: #f4b400
+}
+
+.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled) {
+    background: #f4b400
+}
+
+.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):active,.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):hover,.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-google-yellow .button.button-primary:not(.button-disabled):focus {
+    background: #f09300
+}
+
+.devsite-foreground-grey .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-grey .button:not(.button-disabled) {
+    color: #757575
+}
+
+.devsite-foreground-grey .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-grey .button.button-primary:not(.button-disabled) {
+    background: #757575
+}
+
+.devsite-foreground-grey .button.button-primary:not(.button-disabled):active,.devsite-foreground-grey .button.button-primary:not(.button-disabled):hover,.devsite-foreground-grey .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-grey .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-grey .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-grey .button.button-primary:not(.button-disabled):focus {
+    background: #424242
+}
+
+.devsite-foreground-indigo .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-indigo .button:not(.button-disabled) {
+    color: #3f51b5
+}
+
+.devsite-foreground-indigo .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-indigo .button.button-primary:not(.button-disabled) {
+    background: #3f51b5
+}
+
+.devsite-foreground-indigo .button.button-primary:not(.button-disabled):active,.devsite-foreground-indigo .button.button-primary:not(.button-disabled):hover,.devsite-foreground-indigo .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-indigo .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-indigo .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-indigo .button.button-primary:not(.button-disabled):focus {
+    background: #303f9f
+}
+
+.devsite-foreground-light-green .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-light-green .button:not(.button-disabled) {
+    color: #8bc34a
+}
+
+.devsite-foreground-light-green .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-light-green .button.button-primary:not(.button-disabled) {
+    background: #8bc34a
+}
+
+.devsite-foreground-light-green .button.button-primary:not(.button-disabled):active,.devsite-foreground-light-green .button.button-primary:not(.button-disabled):hover,.devsite-foreground-light-green .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-light-green .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-light-green .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-light-green .button.button-primary:not(.button-disabled):focus {
+    background: #689f38
+}
+
+.devsite-foreground-orange .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-orange .button:not(.button-disabled) {
+    color: #fb8c00
+}
+
+.devsite-foreground-orange .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-orange .button.button-primary:not(.button-disabled) {
+    background: #fb8c00
+}
+
+.devsite-foreground-orange .button.button-primary:not(.button-disabled):active,.devsite-foreground-orange .button.button-primary:not(.button-disabled):hover,.devsite-foreground-orange .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-orange .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-orange .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-orange .button.button-primary:not(.button-disabled):focus {
+    background: #ef6c00
+}
+
+.devsite-foreground-pink .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-pink .button:not(.button-disabled) {
+    color: #e91e63
+}
+
+.devsite-foreground-pink .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-pink .button.button-primary:not(.button-disabled) {
+    background: #e91e63
+}
+
+.devsite-foreground-pink .button.button-primary:not(.button-disabled):active,.devsite-foreground-pink .button.button-primary:not(.button-disabled):hover,.devsite-foreground-pink .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-pink .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-pink .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-pink .button.button-primary:not(.button-disabled):focus {
+    background: #c2185b
+}
+
+.devsite-foreground-purple .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-purple .button:not(.button-disabled) {
+    color: #9c27b0
+}
+
+.devsite-foreground-purple .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-purple .button.button-primary:not(.button-disabled) {
+    background: #9c27b0
+}
+
+.devsite-foreground-purple .button.button-primary:not(.button-disabled):active,.devsite-foreground-purple .button.button-primary:not(.button-disabled):hover,.devsite-foreground-purple .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-purple .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-purple .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-purple .button.button-primary:not(.button-disabled):focus {
+    background: #7b1fa2
+}
+
+.devsite-foreground-teal .button:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-teal .button:not(.button-disabled) {
+    color: #009688
+}
+
+.devsite-foreground-teal .button.button-primary:not(.button-disabled),.devsite-landing-row-item.devsite-foreground-teal .button.button-primary:not(.button-disabled) {
+    background: #009688
+}
+
+.devsite-foreground-teal .button.button-primary:not(.button-disabled):active,.devsite-foreground-teal .button.button-primary:not(.button-disabled):hover,.devsite-foreground-teal .button.button-primary:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground-teal .button.button-primary:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground-teal .button.button-primary:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground-teal .button.button-primary:not(.button-disabled):focus {
+    background: #00796b
+}
+
+.devsite-foreground .button.button-primary:not(.button-disabled) {
+    color: #fff
+}
+
+.devsite-foreground .button:not(.button-disabled):active,.devsite-foreground .button:not(.button-disabled):hover,.devsite-landing-row-item.devsite-foreground .button:not(.button-disabled):active,.devsite-landing-row-item.devsite-foreground .button:not(.button-disabled):hover {
+    background: rgba(153,153,153,.3)
+}
+
+.devsite-foreground .button:not(.button-disabled):focus,.devsite-landing-row-item.devsite-foreground .button:not(.button-disabled):focus {
+    background: rgba(153,153,153,.5)
+}
+
+.devsite-foreground .button.button-disabled,.devsite-foreground .button.button-disabled:hover,.devsite-foreground .button.button-disabled:focus,.devsite-foreground .button.button-disabled:active,.devsite-foreground button:disabled,.devsite-foreground .fc-button:disabled,.devsite-foreground #embedded-explorer button:disabled,.devsite-foreground #embedded-explorer .com-google-api-explorer-client-embedded-EmbeddedParameterForm_EmbeddedParameterFormUiBinderImpl_GenCss_style-execute:disabled,.devsite-foreground .gwt-PopupPanel .popupContent button:disabled,.devsite-foreground input[type="button"]:disabled,.devsite-foreground input[type="file"]:disabled,.devsite-foreground input[type="image"]:disabled,.devsite-foreground input[type="reset"]:disabled,.devsite-foreground input[type="submit"]:disabled {
+    background-color: rgba(153,153,153,.3)
+}
+
+code,pre,.pre-style {
+    background: #f7f7f7;
+    color: #37474f;
+    font: 400 100%/1 Roboto Mono,monospace;
+    padding: 1px 4px
+}
+
+.devsite-dark-code pre,.devsite-dark-code pre code,.devsite-dark-code .pre-style {
+    background: #212121;
+    color: #eceff1
+}
+
+code {
+    font: 500 90%/1 Roboto Mono,monospace;
+    word-break: break-word
+}
+
+table code,pre code,.pre-style code {
+    font-weight: 400;
+    word-break: normal
+}
+
+pre,.pre-style {
+    font: 14px/20px Roboto Mono,monospace;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding: 8px;
+    position: relative
+}
+
+pre code,.pre-style code {
+    background: 0;
+    font-size: 14px;
+    padding: 0
+}
+
+b code,strong code {
+    font-weight: 700
+}
+
+.devsite-code-highlight.prettyprint>span {
+    opacity: .54
+}
+
+table pre {
+    background: rgba(255,255,255,.95)
+}
+
+td>pre:only-child {
+    padding: 0
+}
+
+body:not(.devsite-dark-code) td>pre:only-child {
+    background: 0
+}
+
+h1 code,h2 code,h3 code,h4 code,h5 code,h6 code {
+    background: 0;
+    color: #212121;
+    padding: 0
+}
+
+h1 code {
+    color: #757575
+}
+
+#embedded-explorer .com-google-api-explorer-client-Resources-Css-jsonString,pre .com {
+    color: #d81b60
+}
+
+.devsite-dark-code pre .com {
+    color: #f06292
+}
+
+#embedded-explorer .com-google-api-explorer-client-Resources-Css-jsonNumber,pre .lit,pre .dec {
+    color: #c53929
+}
+
+.devsite-dark-code pre .lit,.devsite-dark-code pre .dec {
+    color: #fbc02d
+}
+
+pre .kwd,pre .tag {
+    color: #3b78e7
+}
+
+.devsite-dark-code pre .kwd,.devsite-dark-code pre .tag {
+    color: #4dd0e1
+}
+
+#embedded-explorer .com-google-api-explorer-client-Resources-Css-jsonBoolean,pre .str,pre .atv {
+    color: #0d904f
+}
+
+.devsite-dark-code pre .str,.devsite-dark-code pre .atv {
+    color: #9ccc65
+}
+
+#embedded-explorer .com-google-api-explorer-client-Resources-Css-jsonKey,pre .typ,pre .atn {
+    color: #9c27b0
+}
+
+.devsite-dark-code pre .typ,.devsite-dark-code pre .atn {
+    color: #ce93d8
+}
+
+a code,td a code {
+    color: #039be5
+}
+
+a .atv,a .atn,a .com,a .dec,a .kwd,a .lit,a .str,a .tag,a .typ,.prettyprint :not(.devsite-github-link)>a:not(.devsite-github-link) {
+    color: #039be5;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-weight: 700
+}
+
+.devsite-dark-code a .atv,.devsite-dark-code a .atn,.devsite-dark-code a .com,.devsite-dark-code a .dec,.devsite-dark-code a .kwd,.devsite-dark-code a .lit,.devsite-dark-code a .str,.devsite-dark-code a .tag,.devsite-dark-code a .typ,.devsite-dark-code .prettyprint :not(.devsite-github-link)>a:not(.devsite-github-link) {
+    color: #29b6f6
+}
+
+a:hover .atv,a:hover .atn,a:hover .com,a:hover .dec,a:hover .kwd,a:hover .lit,a:hover .str,a:hover .tag,a:hover .typ,.prettyprint a:hover {
+    text-decoration: underline
+}
+
+var,var code,var span,.prettyprint var span {
+    color: #ec407a;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-weight: 700
+}
+
+.devsite-terminal::before {
+    color: #bdbdbd;
+    content: "$ "
+}
+
+.devsite-github-link {
+    display: block;
+    text-align: right
+}
+
+a.devsite-github-link:hover,a.devsite-github-link:focus {
+    text-decoration: none
+}
+
+.devsite-github-link::after {
+    color: #039be5;
+    content: 'open_in_new';
+    font: normal normal normal 24px/1 'Material Icons';
+    font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: normal;
+    font-size: 18px;
+    margin-left: 8px;
+    vertical-align: bottom
+}
+
+.devsite-dark-code .devsite-github-link>a,.devsite-dark-code .devsite-github-link::after {
+    color: #29b6f6
+}
+
+.replaceable-credential {
+    border: 1px dashed #e91e63;
+    cursor: pointer;
+    padding: 2px
+}
+
+.devsite-dialog {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 17px 17px rgba(0,0,0,.15),0 27px 55px rgba(0,0,0,.3);
+    display: none;
+    font: 14px/20px Roboto,sans-serif;
+    margin: 24px;
+    max-height: calc(100% - 48px);
+    max-width: calc(100% - 48px);
+    overflow: auto;
+    padding: 8px;
+    position: fixed;
+    z-index: 10012
+}
+
+.devsite-dialog.devsite-henhouse-dialog {
+    left: calc(50% - 300px);
+    padding: 0;
+    margin: 0;
+    top: calc(50% - 182px);
+    width: auto;
+    height: auto;
+    background: transparent
+}
+
+.devsite-henhouse-inner {
+    background: #fff;
+    margin-top: 2px
+}
+
+.devsite-henhouse-spinner-container {
+    width: 600px;
+    height: 365px
+}
+
+.devsite-henhouse-cross-container {
+    height: 160px
+}
+
+.devsite-henhouse-cross {
+    margin: 16px;
+    float: right;
+    cursor: pointer
+}
+
+.devsite-dialog-contents {
+    color: #757575;
+    padding: 16px
+}
+
+.devsite-dialog-contents>p:first-child:last-child {
+    margin: 0
+}
+
+.devsite-dialog h3 {
+    margin: 0 0 20px
+}
+
+.devsite-dialog-buttons {
+    text-align: right
+}
+
+@media screen and (max-width: 720px) {
+    div.devsite-dialog {
+        left:0;
+        margin: 16px;
+        max-height: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+        top: 0
+    }
+}
