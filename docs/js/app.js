@@ -1,4 +1,3 @@
-
 $('.show-snackbar').click(function(){
     var msg = $('.message').val();
     $('#notification').html('');
