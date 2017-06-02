@@ -35,6 +35,10 @@
         this.boundOnTransitionEnd = this.onTransitionEnd_.bind(this);
         this.boundOnTransitionEndDestroy = this.onTransitionEndDestroy_.bind(this);
         var snackBarLength = $('body').find('.md-snackbar.md-snackbar--open').length;
+        if(this.options.showButton){
+            this.$button = $snackBar.find('.md-snackbar__button');
+            this.$button.on('click', this.onButtonClick_.bind(this));
+        }
         if(snackBarLength > 0){
             var snackBar = $('body').find('.md-snackbar.md-snackbar--open');
             var that = snackBar.data('ca.snack.bar');
@@ -53,7 +57,8 @@
         window.setTimeout(function () {
             this.showSnackBar_();
         }.bind(this), 300);
-        this.$snackBar.data('ca.snack.bar', this);
+        this.$snackBar.data('ca.snackbar', this);
+        return this.$snackBar;
     };
 
     SnackBar.VERSION = '1.0';
@@ -87,7 +92,7 @@
     SnackBar.prototype.showSnackBar_ = function(){
         this.$snackBar.addClass(this.CssClasses_.IS_OPEN);
         this.$surface.on('transitionend', this.boundOnTransitionEnd);
-        this.$snackBar.trigger("shown");
+        this.$snackBar.trigger("ca.snackbar.shown");
         if(this.options.autoClose){
             this.hideTimeOut = window.setTimeout(
                 function() {
@@ -100,18 +105,24 @@
     SnackBar.prototype.hideSnackBar_ = function(){
         this.$snackBar.removeClass(this.CssClasses_.IS_OPEN).addClass(this.CssClasses_.IS_ANIMATING);
         this.$surface.on('transitionend', this.boundOnTransitionEndDestroy);
-        this.$snackBar.trigger("hidden");
+        this.$snackBar.trigger("ca.snackbar.hidden");
     };
 
     SnackBar.prototype.onTransitionEndDestroy_ = function () {
         this.$snackBar.removeClass(this.CssClasses_.IS_ANIMATING);
-        this.$surface.unbind('transitionend',this.boundOnTransitionEndDestroy);
+        this.$surface.unbind('transitionend',this.boundOnTransitionEndDestroy); //TODO check here the code
+        this.options.showButton?this.$button.unbind('click'):'';
         this.$snackBar.remove();
     };
 
     SnackBar.prototype.onTransitionEnd_ = function () {
         this.$snackBar.removeClass(this.CssClasses_.IS_ANIMATING);
         this.$surface.unbind('transitionend',this.boundOnTransitionEnd);
+    };
+
+    SnackBar.prototype.onButtonClick_ = function () {
+        this.$snackBar.trigger("ca.snackbar.clicked");
+        this.hideSnackBar_();
     };
 
     SnackBar.prototype.getRandomId = function() {
@@ -124,7 +135,8 @@
     };
 
     var snackBar = function (options) {
-        new SnackBar(options);
+        var snackBar =  new SnackBar(options);
+        return snackBar.$snackBar;
     };
 
     if( !window.snackBar ) {

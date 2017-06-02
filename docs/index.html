@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="md-row">
-            <div class="md-col md-col--7">
+            <div class="md-col md-col--7 md-col--sm-10 md-col--xs-12 md-col--sm-offset-1">
                 <pre class="prettyprint"><span
                         class="pln"><br>&nbsp; </span><span class="kwd">var</span><span class="pln"> config </span><span
                         class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; message</span><span
@@ -76,12 +76,13 @@
                         class="str">"</span><span class="pun">,</span><span
                         class="pln"><br>&nbsp; &nbsp; buttonText</span><span class="pun">:</span><span
                         class="pln"> </span><span class="str">"</span><span class="str">UNDO"</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; showButton</span><span
-                        class="pun">:</span><span class="pln"> </span><var><span class="str">true</span></var><span class="pun">,</span><span
-                        class="pln"><br>&nbsp; &nbsp; alignCenter</span><span class="pun">:</span><span
-                        class="pln"> </span><span class="str">"</span><var><span class="str">true</span></var><span class="pln"><br>&nbsp; </span><span
+                        class="pun">:</span><span class="pln"> </span><var><span class="str">true</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; alignCenter</span><span class="pun">:</span><span class="pln"> </span><var><span class="str">true</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; autoClose</span><span class="pun">:</span><span class="pln"> </span><var><span class="str">true</span></var><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; multiLine</span><span class="pun">:</span><span class="pln"> </span><var><span class="str">false</span></var><span class="pln"><br>&nbsp; </span><span
                         class="pun">};</span><span class="pln"><br>&nbsp; snackBar</span><span class="pun">(</span><span class="pln">config</span><span
                         class="pun">);</span>
                 </pre>
+                <div class="md-list" id="notification">
+
+                </div>
             </div>
             <div class="md-col md-col--5 md-col--sm-12 md-col--xs-12 md-align md-align--center-center">
                 <div class="">
@@ -116,6 +117,33 @@
                         </label>
                         <label class="md-radio md-js-ripple-effect layout-m-l-2" data-toggle="radio" for="noAlignCenter">
                             <input type="radio" name="alignCenter" id="noAlignCenter" class="md-radio__button">
+                            <span class="md-radio__label">No</span>
+                        </label>
+                    </div>
+                    <div class="md-typography--subhead layout-m-t-1">
+                        Auto close?
+                    </div>
+                    <div class="md-layout md-layout--row">
+                        <label class="md-radio" data-toggle="radio" for="yesAutoClose">
+                            <input type="radio" name="autoClose" id="yesAutoClose" class="md-radio__button" checked>
+                            <span class="md-radio__label">Yes</span>
+                        </label>
+                        <label class="md-radio layout-m-l-2" data-toggle="radio" for="noAutoClose">
+                            <input type="radio" name="autoClose" id="noAutoClose" class="md-radio__button">
+                            <span class="md-radio__label">No</span>
+                        </label>
+                    </div>
+
+                    <div class="md-typography--subhead layout-m-t-1">
+                        MultiLine?
+                    </div>
+                    <div class="md-layout md-layout--row">
+                        <label class="md-radio md-js-ripple-effect" data-toggle="radio" for="yesMultiLine">
+                            <input type="radio" name="multiLine" id="yesMultiLine" class="md-radio__button">
+                            <span class="md-radio__label">Yes</span>
+                        </label>
+                        <label class="md-radio md-js-ripple-effect layout-m-l-2" data-toggle="radio" for="noMultiLine">
+                            <input type="radio" name="multiLine" id="noMultiLine" class="md-radio__button" checked>
                             <span class="md-radio__label">No</span>
                         </label>
                     </div>
