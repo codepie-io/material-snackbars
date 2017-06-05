@@ -2,3 +2,5 @@
 .idea/
 mix-manifest.json
 mix.js
+.gitignore
+package.json
