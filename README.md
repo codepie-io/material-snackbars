@@ -5,7 +5,7 @@ They automatically disappear after a timeout or after user interaction on the bu
 
 
 ## Demo
- <a href="https://codeartisan-ui.github.io/material-snackbars/" target="_blank">snackbar.js 1.0</a>
+ <a href="https://codepie-io.github.io/material-snackbars/" target="_blank">snackbar.js 1.0</a>
 
 
 ## Where is it being tested?
